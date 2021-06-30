@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Modak&display=swap');
+
+body{
+    display: flex;
+    justify-content: space-between;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+    padding: 2% 0;
+}
+
+/*************HEADER***************/
+
+header h1{
+    font-family: "Modak";
+    background-image: url(https://img.icons8.com/color/48/000000/strawberry.png);
+    background-repeat: no-repeat;
+    background-color: rgb(255, 0, 0, 0.2);
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin: 0 0 1% 0;
+    padding: 2% 0;
+}
+
+.flex_ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/*************MAIN****************/
+
+main{
+    width: 90%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+/***********ARTICLE***************/
+
+article{
+    width: 90%;
+    margin: 1% auto;
+    border: 1px solid black;
+}
+
+figure{
+    margin: 0;
+    background-color: rgb(219, 219, 219);
+}
+
+figcaption{
+    padding: 1%;
+}
+
+figcaption>p{
+    font-size: .8em;
+}
+
+.button_style{
+    background-color:#F00;
+}
+
+.img_smoothie{
+    width: 100%;
+    display: block;
+}
+
+/************ASIDE****************/
+
+.sous_menu>ul li{
+    padding: 2%;
+    margin: 2% auto;
+    width: 90%;
+}
+
+.img_nav{
+    width: 30%;
+}
+
+.p1>a, .p2>a, .p3>a, .p4>a{
+    width: 90%;
+    margin: 1% auto;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(219, 219, 219);
+}
+
+.p1>a>p, .p2>a>p, .p3>a>p, .p4>a>p{
+    padding: 1%;
+}
+
+ul{
+    margin: 0 2%;
+}
+
+/************FOOTER***************/
+
+footer{
+    background-color: rgb(255, 0, 0);
+    padding: 1%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .content{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .left{
+        width: 45%;
+        align-self: flex-start;
+        order: 1;
+    }
+    main{
+        width: 35%;
+        order: 2;
+        margin: 5%;
+    }
+    aside{
+        order: 3;
+    }
+ 
+}
+
+@media screen and (min-width: 1024px) {
+    .left{
+        width: 30%;
+        order: 2;
+    }
+    main{
+        width: 80%;
+        margin: 1% auto;
+        order: 1;
+    }
+    aside{
+        width: 50%;
+        margin-right: 5%;
+        order: 3;
+    }
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .titre{
+        width: 38%;
+    }
+    nav{
+        flex: 1 1;
+        width: 60%;
+    }
+    .img_nav{
+        width: 23%;
+    }
+    main>p{
+        font-size: 1.2em;
+    }
+}
